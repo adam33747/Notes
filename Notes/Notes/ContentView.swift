@@ -40,7 +40,7 @@ struct ContentView: View {
                             Image(systemName: "plus.circle.fill")
                             .foregroundColor(.green)
                             .imageScale(.large)
-                        }
+                        }.disabled(newNote.isEmpty)
                         
                     }
                 }.font(.headline)
